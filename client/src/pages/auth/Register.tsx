@@ -8,7 +8,6 @@ import Input from "../../components/FormikComponents/Input";
 import { Form, Formik } from "formik";
 import { AxiosError } from "axios";
 import { loginUser, setEmailVerified } from "../../redux/features/authSlice";
-import GoogleAuthBtn from "../../components/GoogleAuth/GoogleAuthBtn";
 import axiosInstance from "../../axiosInstance";
 
 interface UserObj {
@@ -112,10 +111,6 @@ const Register = () => {
             <ErrorBox msg={commonError} />
           </div>
         )}
-        <GoogleAuthBtn
-          setCommonError={setCommonError}
-          setIsSubmitting={setIsSubmitting}
-        />
         <div className="my-5 text-sm font-bold text-gray-400">OR</div>
 
         <Input label="Username" id="username" name="username" type="text" />

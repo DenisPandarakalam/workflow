@@ -9,7 +9,7 @@ services:
       - ./server/.env
     volumes:
       - ./server:/server
-      - ./server/node_modules
+      - ./server:/node_modules
   client:
     container_name: client
     build: ./client
@@ -21,4 +21,4 @@ services:
     tty: true
     volumes:
       - ./client:/client
-      - ./client/node_modules
+      - ./client:/node_modules

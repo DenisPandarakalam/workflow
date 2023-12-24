@@ -97,12 +97,6 @@ const Login = () => {
             <ErrorBox msg={commonError} />
           </div>
         )}
-        <GoogleAuthBtn
-          setCommonError={setCommonError}
-          setIsSubmitting={setIsSubmitting}
-        />
-
-        <div className="my-5 text-sm font-bold text-gray-400">OR</div>
 
         <Input label="Email" id="email" name="email" type="email" />
         <Input label="Password" id="password" name="password" type="password" />
