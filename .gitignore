@@ -44,3 +44,4 @@ dist
 dist-ssr
 *.local
 *.lock
+client/yarn.lock
